@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* TODO LIST */
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 90vw;
+    max-width: 500px;
+
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.criarTarefa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+label{
+    font-weight: bold;
+    color: rgb(0, 112, 112);
+}
+
+input, textarea{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+
+    background-color: rgb(238, 238, 238);
+}
+
+textarea{
+    height: 100px;
+}
+
+input:focus, textarea:focus{
+    outline: 1px solid teal;
+}
+
+.btnAdicionar{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: teal;
+    cursor: pointer;
+}
+
+.btnAdicionar:hover{
+    background-color: rgb(1, 99, 99);
+}
+
+/* FIM TODO LIST */
+
+
+
+/* TODO ITEM */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarefas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 500px;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.tarefa{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h3{
+    color: rgb(0, 112, 112);
+}
+
+p{
+    word-wrap: break-word;
+}
+
+.deletar{
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.deletar:hover{
+    background-color: rgb(1, 99, 99);
+}
+
+/* FIM TODO ITEM */
