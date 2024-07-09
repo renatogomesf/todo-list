@@ -7,19 +7,17 @@ const TodoList = () => {
     const tituloRef = useRef()
     const descricaoRef = useRef()
 
-    const tarefas = []
+    const [tarefas,setTarefas] = useState([])
 
     const handlePegarTarefa = ()=>{
-
-        const tarefa = {
-            titulo: tituloRef.current.value,
-            descricao: descricaoRef.current.value
-        }
-
-        tarefas.push(tarefa)
-        console.log(tarefas)
+        setTarefas((tarefas)=>{
+            const tarefa = {
+                titulo: tituloRef.current.value,
+                descricao: descricaoRef.current.value
+            }
+            return [...tarefas,tarefa]
+        })
     }
-
 
     return (
         <>

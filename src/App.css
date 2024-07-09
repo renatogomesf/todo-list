@@ -13,7 +13,6 @@
 }
 
 body{
-    width: 100vw;
     height: 100vh;
     background-color: rgb(59, 59, 59);
 
@@ -89,12 +88,6 @@ input:focus, textarea:focus{
 
 .card{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.tarefas{
-    display: flex;
     justify-content: center;
     flex-direction: column;
     width: 90vw;
@@ -102,7 +95,7 @@ input:focus, textarea:focus{
     gap: 20px;
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px 0px;
     border-radius: 10px;
 }
 
